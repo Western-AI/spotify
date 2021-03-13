@@ -11,7 +11,7 @@ data = pd.read_csv("Resources/archive1/data.csv")
 data.drop_duplicates()
 data.dropna()
 
-data = data.head(10)
+#data = data.head(10)
 
 y = data["popularity"].tolist()
 y = np.array(y)
@@ -34,6 +34,6 @@ print('predicted response:', y_pred, sep='\n')
 print("actual", y, sep="\n")
 percentOff=[]
 for i in range(0,len(y)):
-    #percentOff.append(round(1000*abs(y_pred[i]-y[i]))/1000)
-    percentOff.append(abs(y_pred[i] - y[i]))
-print("percent off", percentOff, sep="\t")
+    percentOff.append(round(1000*abs(y_pred[i]-y[i]))/1000)
+    #percentOff.append(abs(y_pred[i] - y[i]))
+#print("percent off", percentOff, sep="\t")
