@@ -5,7 +5,10 @@ from sklearn.preprocessing import PolynomialFeatures
 import matplotlib.pyplot as plt
 
 # constants
-deg = 2
+deg = 2 
+#deg =2 coefficient of determination: 0.5197856438141792
+# deg = 3 coefficient of determination: 0.5929112767701978
+# deg = 4 coefficient of determination: 0.6063151835496412
 
 # data set up
 data = pd.read_csv("Resources/archive1/data.csv")
