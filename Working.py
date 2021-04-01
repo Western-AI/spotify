@@ -39,12 +39,13 @@ while True:
     if (model1==0):
         r1, model1 = run(deg)
     r2, model2 = run(deg + 1)
+    deg = deg + 1
     if r2 - r1 < .00001:
         model = model2
         r_sq = r2
         break
     r1,model1 = r2,model2
-    deg = deg + 1
+    
 print("\n\n\n","-"*40,
       "deg: ", deg)
 print('coefficient of determination:', r_sq)
