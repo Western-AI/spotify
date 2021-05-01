@@ -54,9 +54,10 @@ class DataPreProcessing: # to Get data from CSV by panadas, then convert to nump
             Max = max(list)
             Min = min(list)
             range = Max-Min
-            for col in ["year", "key","loudness","tempo"]:
-                df[col] = ((df[col] - Min) / range) * 100
-                df[col] = df[col].astype(int)
+            df[item] = df[item]-Min
+            df[item] = (df[item]/range)*100
+            df[item] = df[item].fillna(0)
+            df[item] = df[item].astype(int)
         return df
 
     def __init__(self, fileLocation):
