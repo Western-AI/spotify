@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+   
+
+    <body>
+
+            
+
+        <br>
+
+        <div class="slidecontainer">
+
+
+            <form action="#" method="post">
+
+                <h3>Choose your Graph:</h3>
+            
+                <select name='graphChoice'>
+                    <option value="0">Graph A </option>
+                    <option value="1">Graph B </option>
+                    <option value="2">Graph C </option>
+                    <Br>   
+                </select>
+
+                <h3>Choose Attributes: </h3>
+
+                    Acousticness:     <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="acousticness">    <Br>
+                    Valence:          <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="valence">         <Br>
+                    Danceability:     <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="danceability">    <Br>
+                    Energy:           <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="energy">          <Br>
+                    Instrumentalness: <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="instrumentalness"><Br>
+                    Liveness:         <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="liveness">        <Br>
+                    Speechiness:      <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="speechiness">     <Br>
+                    Mode:             <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="mode">            <Br><br>
+                    Explicit:         <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="explicit">        <Br><br>
+                    Year:             <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="year">            <Br><br>            
+                    Key:              <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="key">             <Br><br>
+                    Loudness:         <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="loudness">        <Br><br>
+                    Tempo:            <input type="range" min="0" max="1" value="0" class="slider" step=".01" name="tempo">           <Br><br>
+                            
+                <input type="submit" value = "Submit"/>
+    
+            </form>
+
+        </div>
+
+        <br>
+
+        <div>
+            {{data}}
+
+        </div>
+
+    </body>
+</html>
