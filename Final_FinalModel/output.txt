@@ -1,0 +1,13 @@
+acousticness:99
+danceability:88
+energy:90
+explicit:53
+instrumentalness:51
+key:73
+liveness:71
+loudness:49
+mode:71
+speechiness:47
+tempo:58
+valence:98
+year:81
